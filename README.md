@@ -19,3 +19,11 @@ docker-compose up -d
 ```bash
 curl http://localhost:3000
 ```
+
+### If apps crushed, compose up again. It's because the partitions of Kafka were not ready.
+
+```bash
+docker compose up -d
+# Or
+docker-compose up -d
+```
